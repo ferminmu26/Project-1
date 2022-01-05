@@ -2,7 +2,7 @@
 
 # Setup and mobile version skeleton
 
-> The first milestone in the rocess of creating my portfolio.
+> The first milestone in the process of creating my portfolio.
 
 ![screenshot](./app_screenshot.png)
 
