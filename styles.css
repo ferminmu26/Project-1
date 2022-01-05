@@ -2,10 +2,28 @@
     height: 717.15px;
 }
 
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .intro{
     background-image: url("icons/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
+
+}
+
+
+.menubar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.network{
+    display: flex;
+    
 
 }
