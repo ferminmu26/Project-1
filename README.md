@@ -1,59 +1,29 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Setup and mobile version skeleton
 
-> One paragraph statement about the project.
+> The first milestone in the rocess of creating my portfolio.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+This is my first approach to mobile web design. For this project I have created 3 sections of a website totally responsive for mobile devices using flexbox.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html, css
+
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
+## Author
 
-## Getting Started
+👤 **Miguel Fermín**
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ferminmu26](https://github.com/ferminmu26)
+- Twitter: [@ferminmu26](https://twitter.com/ferminmu26)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/mejfa)
 
 ## 🤝 Contributing
 
@@ -64,12 +34,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 

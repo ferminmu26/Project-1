@@ -1,0 +1,85 @@
+body {
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #f7f7f9;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_mobile {
+  height: 48px;
+}
+
+.containernav {
+  padding: 12px 0 12px 0;
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 223px;
+}
+
+.logo {
+  height: 20px;
+  width: 76px;
+}
+
+.hamburguer {
+  height: 12px;
+  width: 18px;
+}
+
+.intro_container {
+  height: 587.15px;
+  padding-top: 102px;
+  background-image: url("icons/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio_title {
+  margin: 0 24px 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.bio {
+  margin: 12px 24px 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.connect {
+  margin: 12px 24px 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.network {
+  margin: 12px 180.83px 0 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
