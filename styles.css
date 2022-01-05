@@ -1,69 +1,82 @@
 body {
-  margin: 0;
-  background-color: #f7f7f9;
-  height: auto;
-  width: fit-content;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #F7F7F9;
 }
 
-.content {
-  width: 375px;
-  height: 717.15px;
-}
-
-.navigation {
-  margin: 0;
+.wrap {
   width: 100%;
   display: flex;
-  padding-left: 3%;
-  padding-bottom: 0;
-  border: 1px solid red;
+  flex-direction: column;
+}
+
+.header_mobile {
+  height: 46px;
+}
+
+.containernav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 223px;
+  padding: 10px 12px;
 }
 
 .logo {
-  width: 76px;
+  margin-left: 24px;
   height: 20px;
-  margin: 58px 0 640px 24px;
+  width: 76px;
+  left: 12px;
+  top: 10px;
 }
 
-.navbar {
-  margin: 62px 35px 644px 0;
+.hamburguer {
+  margin-right: 24px;
+  height: 12px;
+  width: 18px;
+  left: 8px;
+  top: 8px;
 }
 
-.intro {
+.menunav .intro {
+  margin-top: 104px;
+  width: 100%;
+}
+
+.intro_container {
+  height: 587.15px;
+  padding-top: 102px;
   background-image: url("icons/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
-  max-width: 100%;
-  height: 587.15px;
-  background-size: 99% 98%;
-  background-position: 100%;
-  margin-bottom: 0;
-  padding-bottom: 110%;
-  margin-top: 5%;
-  margin-left: 0;
-  border: 1px solid blue;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.menubar {
-  height: auto;
-}
-
-.greetings {
+.bio_title {
+  margin: 0 24px 0 24px;
   font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  display: flex;
+  align-items: center;
   color: #172b4d;
 }
 
 .bio {
+  margin: 12px 24px 0 24px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
 .connect {
+  margin: 12px 24px 0 24px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -73,13 +86,9 @@ body {
 }
 
 .network {
+  margin: 12px 180.83px 0 24px;
   width: 100%;
-  height: 3%;
-  margin: 0;
-  padding-left: 6%;
-  padding-top: 1%;
-  margin-top: 1%;
-  display: inline-flex;
-  align-items: baseline;
-  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
