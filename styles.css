@@ -11,36 +11,27 @@ body {
 }
 
 .header_mobile {
-  height: 46px;
+  height: 48px;
 }
 
 .containernav {
+  padding: 12px 0 12px 0;
+  margin: 0 24px 0 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 223px;
-  padding: 10px 12px;
 }
 
 .logo {
-  margin-left: 24px;
   height: 20px;
   width: 76px;
-  left: 12px;
-  top: 10px;
 }
 
 .hamburguer {
-  margin-right: 24px;
   height: 12px;
   width: 18px;
-  left: 8px;
-  top: 8px;
-}
-
-.menunav .intro {
-  margin-top: 104px;
-  width: 100%;
 }
 
 .intro_container {
