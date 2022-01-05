@@ -1,12 +1,37 @@
-.content{
-    height: 717.15px;
-}
 
-.navigation{
-    display: flex;
-    justify-content: space-between;
-}
+    body {
+        margin: 0;
+        background-color: #f7f7f9;
+        height: auto;
+      }
 
+      .content{
+        height: 717.15px;
+    }
+
+
+
+
+    .navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+   
+
+  
+
+
+
+
+
+
+
+
+.logo{
+    width: 76px;
+    height: 20px;
+  }
 
 .intro{
     background-image: url("icons/header-shapes\ mobile@2x.svg");
@@ -21,9 +46,33 @@
 
 }
 
+.greetings{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+}
+.bio{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-size: 16px;
+line-height: 24px;
+  color: #344563;
+}
+
+.connect{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  color: #7F8CFF;
+}
 
 .network{
     display: flex;
     
 
 }
+
