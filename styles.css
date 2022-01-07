@@ -243,7 +243,6 @@
 
   .click:visited {
     color: #5e6c84;
-    border: 1px solid #6070ff;
     box-sizing: border-box;
     border-radius: 8px;
     background-color: #e5e5e5;
@@ -336,7 +335,6 @@
 
   .resume:visited {
     color: #5e6c84;
-    border: 1px solid #6070ff;
     box-sizing: border-box;
     border-radius: 8px;
     background-color: #e5e5e5;
