@@ -1,12 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Setup and mobile version skeleton
+# Mobile Version Website
 
-> The first milestone in the rocess of creating my portfolio.
+> The first milestone in the process of creating my portfolio.
 
-![screenshot](./app_screenshot.png)
+![preview](./preview.gif)
 
-This is my first approach to mobile web design. For this project I have created 3 sections of a website totally responsive for mobile devices using flexbox.
+This is my first website designed for mobile devices. For this project I have created 3 sections of a website totally responsive using grid and flexbox.
+
+
 
 ## Built With
 
