@@ -80,6 +80,7 @@
 
   .network {
     margin: 12px 0 0 0;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -193,6 +194,7 @@
 
   .tagcontainer {
     margin: 12px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -220,6 +222,32 @@
     box-sizing: border-box;
     border-radius: 8px;
     background-color: white;
+  }
+
+  .click:active {
+    color: #fff;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #2230d2;
+  }
+
+  .click:hover {
+    color: white;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  .click:visited {
+    color: #5e6c84;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    border: 1px solid #c1c7d0;
   }
 
   /* About section */
@@ -287,6 +315,32 @@
     box-sizing: border-box;
     border-radius: 8px;
     background-color: white;
+  }
+
+  .resume:active {
+    color: #fff;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #2230d2;
+  }
+
+  .resume:hover {
+    color: white;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  .resume:visited {
+    color: #5e6c84;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    border: 1px solid #c1c7d0;
   }
 
   ul {
