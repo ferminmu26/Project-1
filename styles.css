@@ -1,8 +1,7 @@
-@media (max-width: 820px) {
-  
+@media (min-width: 82px) {
 
 body {
-  width: 375px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f7f7f9;
 }
@@ -15,7 +14,7 @@ body {
 
 .welcome{
   width: 375px;
-  height: 718px;
+  height: 685px;
   background: #ffffff;
   border-radius: 0 0 0 76px;
    
@@ -28,11 +27,10 @@ body {
 
 .header_mobile {
   height: 48px;
-  padding: 12px 24px 12px 24px;
+  padding: 12px 0 12px 0;
 }
 
 .containernav {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
