@@ -4,9 +4,11 @@
 
 > The first milestone in the process of creating my portfolio.
 
+
 ![preview](./preview.gif)
 
 This is my first website designed for mobile devices. For this project I have created 3 sections of a website totally responsive using grid and flexbox.
+
 
 
 
@@ -17,7 +19,7 @@ This is my first website designed for mobile devices. For this project I have cr
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ferminmu26.github.io/Project-1/)
 
 ## Author
 
