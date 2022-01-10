@@ -9,7 +9,7 @@
 
 This is my first website designed for mobile devices. For this project, I have created 5 sections of a website totally responsive using grid and flexbox and added a contact form in the footer for UX experienc
 
-![preview](./Animation2.gif)
+![preview](./icons/Animation2.gif)
 
 
 
