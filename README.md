@@ -7,7 +7,9 @@
 
 ![preview](./preview.gif)
 
-This is my first website designed for mobile devices. For this project I have created 3 sections of a website totally responsive using grid and flexbox.
+This is my first website designed for mobile devices. For this project, I have created 5 sections of a website totally responsive using grid and flexbox and added a contact form in the footer for UX experienc
+
+![preview](./Animation2.gif)
 
 
 
@@ -21,13 +23,19 @@ This is my first website designed for mobile devices. For this project I have cr
 
 [Live Demo Link](https://ferminmu26.github.io/Project-1/)
 
-## Author
+## Authors
 
 👤 **Miguel Fermín**
 
 - GitHub: [@ferminmu26](https://github.com/ferminmu26)
 - Twitter: [@ferminmu26](https://twitter.com/ferminmu26)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mejfa)
+
+👤 **Kenny Salazar**
+
+- GitHub: [@helio3197](https://github.com/helio3197)
+- Twitter: [@kennysalazar31](https://twitter.com/kennysalazar31)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kenny-salazar-1a1687110)
 
 ## 🤝 Contributing
 
