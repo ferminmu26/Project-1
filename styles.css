@@ -595,7 +595,7 @@
   }
 }
 
-@media (min-width: 692px) and (max-width: 11100px) {
+@media (min-width: 992px) {
   body {
     margin: 0;
     background-color: #e5e5e5;
@@ -603,7 +603,8 @@
   }
 
   .wrap {
-    width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     background-color: #f7f7f9;
     display: grid;
@@ -614,31 +615,40 @@
 
   .welcome {
     width: 100%;
-    height: 685px;
+    height: 916px;
+    margin: 0 auto;
+    box-sizing: border-box;
     background: #fff;
-    border-radius: 0 0 0 76px;
+    border-radius: 0 0 0 150px;
+    
   }
 
   .welcome-container {
     width: 100%;
+    padding: 0 0 76.54px 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
   }
 
   .header_mobile {
+    width: 100%;
+    box-sizing: border-box;
     position: fixed;
-    height: 72px;
-    padding: 0 142px 0 155px;
     background-color: white;
+    height: 72px;
+    padding: 0 155px 0 155px;
   }
 
   .containernav {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 808px;
   }
-  .containernav > a:nth-child(1) {
+  .containernav > a:nth-child(2) {
     display: none;
   }
   .menu {
@@ -646,25 +656,41 @@
   .menu-container {
     padding: 10px 12px;
     display: flex;
-    gap: 32px;
+    gap: 32px; 
+    }
+  .menu-container li > a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
   }
-
+  .intro {
+    width: 100%;
+  }
   .intro_container {
-    width: 1397.4px;
+    width: 100%;
     height: 721.46px;
-    padding: 102px 24px 0 24px;
+    box-sizing: border-box;
+    margin: 118px 8px 0 34.6px;
+    padding: 241px 222px 0 225.4px;
     background-image: url("icons/dsktp.png");
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .bio_title {
-    margin: 0 24px 0 0;
+    margin: 0;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 48px;
+    line-height: 60px;
     display: flex;
     align-items: center;
     color: #172b4d;
@@ -672,10 +698,11 @@
 
   .bio {
     margin: 12px 0 0 0;
+    padding: 0 15px 0 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     color: #344563;
   }
 
