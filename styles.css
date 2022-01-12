@@ -125,6 +125,9 @@
     width: 295px;
     height: 220px;
   }
+  .portfolio-desktop{
+    display: none;
+  }
 
   .project {
     margin: 12px 0 0 0;
@@ -133,6 +136,22 @@
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
+  }
+  .project:nth-child(2) {
+    display: none;
+  }
+  .client:nth-child(2) {
+    display: none;
+  }
+  .role:nth-child(2) {
+    display: none;
+  }
+  .year:nth-child(2) {
+    display: none;
+  }
+
+  .descrdetail:nth-child(2) {
+    display: none;
   }
 
   .project2,
