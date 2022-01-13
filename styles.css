@@ -694,6 +694,15 @@
     gap: 32px;
   }
 
+  .menu-container a {
+    color: initial;
+    transition: color 2s;
+  }
+
+  .menu-container a:hover {
+    color: blue;
+  }
+
   .intro {
     box-sizing: border-box;
   }
