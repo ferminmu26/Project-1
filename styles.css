@@ -6,49 +6,61 @@
   }
 
   .wrap {
-    width: 375px;
+    width: 100%;
     margin: 0 auto;
     background-color: #f7f7f9;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   /* Welcome section */
 
   .welcome {
-    width: 375px;
-    height: 685px;
+    margin: 0 auto;
+    box-sizing: border-box;
     background: #fff;
     border-radius: 0 0 0 76px;
+    flex: 1;
   }
 
   .welcome-container {
     width: 100%;
+    height: 685px;
     display: flex;
     flex-direction: column;
   }
 
   .header_mobile {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 48px;
-    padding: 12px 0 12px 0;
+    padding: 12px 36px 12px 24px;
   }
 
   .containernav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 223px;
+    justify-content: space-between;
   }
 
   .menu {
     display: none;
   }
 
+  .intro {
+    box-sizing: border-box;
+  }
+
   .intro_container {
     height: 587.15px;
+    box-sizing: border-box;
     padding: 102px 24px 0 24px;
     background-image: url("icons/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -93,7 +105,6 @@
 
   /* Works section */
   .works {
-    width: 327px;
     margin: 114px 24px 0 24px;
     display: grid;
     justify-content: center;
@@ -123,8 +134,8 @@
   }
 
   .portfoliocard {
-    width: 295px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
   }
 
   .portfolio-desktop {
@@ -195,16 +206,6 @@
 
   .descrdetail:nth-child(2) {
     display: none;
-  }
-
-  .project2,
-  .project4 {
-    margin: 12px 24px 0 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
   }
 
   .descrcontainer {
@@ -280,7 +281,6 @@
   /* About section */
 
   .about {
-    width: 375px;
     margin: 114px 0 0 0;
     background: #fff;
     border-radius: 0 76px 0 0;
@@ -374,6 +374,7 @@
   }
 
   .categories {
+    width: 100%;
     margin: 36px 24px 0 0;
     padding: 0 12px;
     display: flex;
@@ -408,6 +409,7 @@
   }
 
   .categories-container {
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -419,7 +421,6 @@
 
   .categories-container li > div {
     margin: 0;
-    width: 280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -464,12 +465,11 @@
 
   .sep {
     margin: 0;
-    width: 327px;
+    width: 100%;
   }
 
   /* contact section */
   .contact {
-    width: 375px;
     margin: 0;
     background: #fff;
     border-radius: 0 76px 0 0;
