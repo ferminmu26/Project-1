@@ -773,7 +773,11 @@
     justify-content: space-between;
     flex-grow: 1;
     gap: 22px;
+    transition-property: all;
+    transition-duration: 2s;
+    
   }
+  
 
   .c2,
   .c4 {
@@ -788,6 +792,8 @@
     justify-content: space-between;
     flex-grow: 1;
     gap: 22px;
+        transition-property: all;
+    transition-duration: 2s;
   }
 
   .c1-container {
@@ -802,31 +808,31 @@
   }
 
   .c1:hover {
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-  }
+    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
+    }
 
   .c2:hover {
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
   }
 
   .c3:hover {
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
   }
 
   .c4:hover {
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
   }
 
   .portfoliocard {
