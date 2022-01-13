@@ -6,49 +6,61 @@
   }
 
   .wrap {
-    width: 375px;
+    width: 100%;
     margin: 0 auto;
     background-color: #f7f7f9;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   /* Welcome section */
 
   .welcome {
-    width: 375px;
-    height: 685px;
+    margin: 0 auto;
+    box-sizing: border-box;
     background: #fff;
     border-radius: 0 0 0 76px;
+    flex: 1;
   }
 
   .welcome-container {
     width: 100%;
+    height: 685px;
     display: flex;
     flex-direction: column;
   }
 
   .header_mobile {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
     height: 48px;
-    padding: 12px 0 12px 0;
+    padding: 12px 36px 12px 24px;
   }
 
   .containernav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 223px;
+    justify-content: space-between;
   }
 
   .menu {
     display: none;
   }
 
+  .intro {
+    box-sizing: border-box;
+  }
+
   .intro_container {
     height: 587.15px;
+    box-sizing: border-box;
     padding: 102px 24px 0 24px;
     background-image: url("icons/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -93,7 +105,6 @@
 
   /* Works section */
   .works {
-    width: 327px;
     margin: 114px 24px 0 24px;
     display: grid;
     justify-content: center;
@@ -123,8 +134,8 @@
   }
 
   .portfoliocard {
-    width: 295px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
   }
 
   .portfolio-desktop {
@@ -195,16 +206,6 @@
 
   .descrdetail:nth-child(2) {
     display: none;
-  }
-
-  .project2,
-  .project4 {
-    margin: 12px 24px 0 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
   }
 
   .descrcontainer {
@@ -280,7 +281,6 @@
   /* About section */
 
   .about {
-    width: 375px;
     margin: 114px 0 0 0;
     background: #fff;
     border-radius: 0 76px 0 0;
@@ -374,6 +374,7 @@
   }
 
   .categories {
+    width: 100%;
     margin: 36px 24px 0 0;
     padding: 0 12px;
     display: flex;
@@ -408,6 +409,7 @@
   }
 
   .categories-container {
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -419,7 +421,6 @@
 
   .categories-container li > div {
     margin: 0;
-    width: 280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -464,12 +465,11 @@
 
   .sep {
     margin: 0;
-    width: 327px;
+    width: 100%;
   }
 
   /* contact section */
   .contact {
-    width: 375px;
     margin: 0;
     background: #fff;
     border-radius: 0 76px 0 0;
@@ -629,25 +629,24 @@
 
   .wrap {
     width: 100%;
-    margin: 0 auto;
     background-color: #f7f7f9;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   /* Welcome section */
 
   .welcome {
-    width: 100%;
-    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     background: #fff;
     border-radius: 0 0 0 150px;
+    flex: 1;
   }
 
   .welcome-container {
-    width: 100%;
+    height: 916px;
     padding: 0 0 76.54px 0;
     box-sizing: border-box;
     display: flex;
@@ -665,7 +664,6 @@
   }
 
   .containernav {
-    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -690,7 +688,6 @@
   }
 
   .menu .menu-container {
-    width: 100%;
     padding: 10px 12px;
     box-sizing: border-box;
     display: flex;
@@ -698,22 +695,19 @@
   }
 
   .intro {
-    width: 100%;
     box-sizing: border-box;
   }
 
   .intro_container {
-    width: 100%;
-    height: 721.46px;
+    height: 821.46px;
     box-sizing: border-box;
-    margin: 118px 8px 0 0;
-    padding: 241px 222px 0 225.4px;
+    padding: 291px 222px 0 225.4px;
     background-image: url("icons/dsktp.png");
-    background-repeat: no-repeat;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: left 79px;
     display: flex;
-    flex-shrink: 0;
-    flex-basis: 926.17px;
     flex-direction: column;
   }
 
@@ -759,59 +753,51 @@
   /* Works section */
 
   .works {
-    width: 100%;
-    padding: 0 142px 0 142px;
     box-sizing: border-box;
-    display: grid;
+    padding: 0 142px 0 142px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
   .c1,
   .c3 {
-    width: 100%;
-    height: 496px;
     margin: 142px 0 0 0;
     background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     border-radius: 24px;
+    padding: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
-    gap: 22px;
     flex-grow: 1;
-    flex-shrink: 1;
-    padding: 24px;
+    gap: 22px;
   }
 
   .c2,
   .c4 {
-    width: 100%;
-    height: 496px;
     margin: 142px 0 0 0;
     background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     border-radius: 24px;
+    padding: 24px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: stretch;
     flex-grow: 1;
     gap: 22px;
-    padding: 24px;
   }
 
   .c1-container {
-    height: 496px;
     box-sizing: content-box;
     display: flex;
+    flex: 1;
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
-    width: 50%;
+    flex-basis: 460px;
     padding: 24px;
   }
 
@@ -848,12 +834,13 @@
   }
 
   .portfolio-desktop {
+    margin: 0;
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    flex: 1;
     flex-grow: 1;
     flex-basis: 460px;
-    margin: 0;
   }
 
   .project {
@@ -872,10 +859,7 @@
   .descrcontainer {
     padding: 20px 0 0 0;
     display: flex;
-    flex-direction: row;
-    row-gap: 12px;
     align-items: center;
-    font-family: "Poppins", sans-serif;
   }
 
   .client {
@@ -898,7 +882,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    flex-shrink: 0;
     color: #7a869a;
   }
 
@@ -917,6 +900,7 @@
     font-size: 18px;
     line-height: 24px;
     color: #7a869a;
+    flex: 1;
   }
 
   .year:nth-child(1) {
@@ -997,7 +981,6 @@
   /* About section */
 
   .about {
-    width: 100%;
     height: 668px;
     margin: 142px 0 0 0;
     box-sizing: border-box;
@@ -1018,7 +1001,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-basis: 447px;
+    flex-basis: 900px;
   }
 
   .about-title {
@@ -1103,6 +1086,7 @@
   }
 
   .categories {
+    width: 100%;
     margin: 0;
     padding: 0 12px;
     box-sizing: border-box;
@@ -1157,7 +1141,6 @@
   }
 
   .categories-container li > div:nth-child(1) {
-    width: 100%;
     margin: 0;
     padding: 24px 33px 24px 24px;
     box-sizing: border-box;
@@ -1173,7 +1156,6 @@
   }
 
   .categories-container li > div:nth-child(2) {
-    width: 100%;
     margin: 0;
     padding: 24px 33px 24px 24px;
     box-sizing: border-box;
@@ -1189,7 +1171,6 @@
   }
 
   .categories-container li > div:nth-child(3) {
-    width: 100%;
     margin: 0;
     padding: 24px 33px 24px 24px;
     box-sizing: border-box;
@@ -1226,25 +1207,24 @@
 
   /* contact section */
   .contact {
-    width: 100%;
+    height: 846px;
     margin: 0;
     box-sizing: border-box;
     background: #fff;
-    border-radius: 0 76px 0 0;
   }
 
   .contact-container {
-    margin: 71px 0 0 0;
     width: 100%;
-    background: #6070ff;
+    height: 880.7px;
+    margin: 71px 0 0 0;
+    padding: 141px 245px 0 245px;
     box-sizing: border-box;
-    height: 780.7px;
-    padding: 142px 360px 78px 361px;
     border-radius: 150px 0 0 0;
+    background: #6070ff;
     background-image: url("icons/fotb.png");
     background-repeat: no-repeat;
-    background-position: right 79px;
     background-size: contain;
+    background-position: right 79px;
     display: flex;
     flex-direction: column;
   }
@@ -1263,7 +1243,7 @@
 
   .contact-description {
     margin: 12px 0 0 0;
-    padding: 0 30px;
+    padding: 0 116px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -1275,7 +1255,7 @@
   .form-container {
     width: 100%;
     margin: 30px 0 0 0;
-    padding: 0 60px;
+    padding: 0 197px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
