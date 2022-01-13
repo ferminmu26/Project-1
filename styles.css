@@ -1286,6 +1286,24 @@
     align-self: center;
   }
 
+  .fullname:focus,
+  .email:focus,
+  .message:focus {
+    animation-name: slidetop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidetop {
+    from {
+      background: white;
+    }
+
+    to {
+      background: yellow;
+    }
+  }
+
   .fullname {
     padding: 15px 16px;
     height: 48px;
