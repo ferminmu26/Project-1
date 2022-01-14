@@ -673,11 +673,19 @@
 
   .logo {
     width: 100%;
-    transition: all 2s;
+    transition: all 1s;
   }
 
   .logo:hover {
     width: 120%;
+    transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+  }
+
+  .menu-container a {
+    color: initial;
+    font-weight: initial;
+    font-size: initial;
+    transition: color 2s;
   }
 
   .menu-container li > a {
@@ -703,13 +711,10 @@
     gap: 32px;
   }
 
-  .menu-container a {
-    color: initial;
-    transition: color 2s;
-  }
-
   .menu-container a:hover {
     color: blue;
+    font-weight: bold;
+    font-size: medium;
   }
 
   .intro {
@@ -823,32 +828,15 @@
     padding: 24px;
   }
 
-  .c1:hover {
-    background: rgb(255, 255, 255);
-    border: 2px solid #a7aeff;
-    border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
-  }
-
-  .c2:hover {
-    background: rgb(255, 255, 255);
-    border: 2px solid #a7aeff;
-    border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
-  }
-
-  .c3:hover {
-    background: rgb(255, 255, 255);
-    border: 2px solid #a7aeff;
-    border-radius: 24px;
-    filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
-  }
-
+  .c1:hover,
+  .c2:hover,
+  .c3:hover,
   .c4:hover {
-    background: rgb(255, 255, 255);
     border: 2px solid #a7aeff;
     border-radius: 24px;
     filter: drop-shadow(0 48px 48px rgba(0, 26, 255, 0.507));
+    transform: scale(1.1);
+    background-color: white;
   }
 
   .portfoliocard {
@@ -1064,6 +1052,10 @@
     gap: 20px;
   }
 
+  .network li {
+    transition: all 1s;
+  }
+
   .resume {
     margin: 24px 0 0 0;
     padding: 12px;
@@ -1128,6 +1120,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    transition: all 1s;
   }
 
   .categories li > img {
@@ -1160,6 +1153,15 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+  }
+
+  .categories li:hover {
+    transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+    background-color: rgb(241, 240, 255);
+  }
+
+  .network li:hover {
+    transform: scale(1.3);
   }
 
   .categories-container li > div:nth-child(1) {
@@ -1239,7 +1241,7 @@
     width: 100%;
     height: 880.7px;
     margin: 71px 0 0 0;
-    padding: 141px 245px 0 245px;
+    padding: 141px 14% 0 14%;
     box-sizing: border-box;
     border-radius: 150px 0 0 0;
     background: #6070ff;
@@ -1284,24 +1286,6 @@
     flex-grow: 1;
     flex-shrink: 1;
     align-self: center;
-  }
-
-  .fullname:focus,
-  .email:focus,
-  .message:focus {
-    animation-name: slidetop;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes slidetop {
-    from {
-      background: white;
-    }
-
-    to {
-      background: yellow;
-    }
   }
 
   .fullname {
@@ -1351,6 +1335,24 @@
     color: #b3bac5;
   }
 
+  .fullname:focus,
+  .email:focus,
+  .message:focus {
+    animation-name: slidetop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidetop {
+    from {
+      background: white;
+    }
+
+    to {
+      background: #edeefd;
+    }
+  }
+
   .touch {
     margin: 27px 0 0 0;
     padding: 12px;
@@ -1380,7 +1382,7 @@
     border: 1px solid #6070ff;
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: #6070ff;
+    background-color: #2230d2;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
