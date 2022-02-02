@@ -661,6 +661,7 @@
     position: fixed;
     background-color: white;
     height: 72px;
+    z-index: 1;
   }
 
   .containernav {
