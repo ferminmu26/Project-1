@@ -47,18 +47,23 @@
   }
 
   .menu {
-    height: 685px;
     display: flex;
+    height: 685px;
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background: #6070ff;
-    mix-blend-mode: multiply;
-    backdrop-filter: blur(10px);
+    background: rgba(96, 112, 255, 0.75);
+    backdrop-filter: blur(7px);
   }
-
+  .exit {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 41px;
+    top: 25px;
+  }
   .menu-container {
     margin: 0;
     padding: 16px;
@@ -72,6 +77,7 @@
   }
 
   .menu-container a {
+    z-index: 1;
     text-decoration: none;
     font-style: normal;
     font-weight: 600;
@@ -733,7 +739,9 @@
   .containernav > a:nth-child(2) {
     display: none;
   }
-
+  .exit {
+    display: none;
+  }
   .menu .menu-container {
     padding: 10px 12px;
     box-sizing: border-box;
