@@ -46,24 +46,30 @@
     justify-content: space-between;
   }
 
+  .toggle {
+    z-index: 99999;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background: url("icons/Hamburguer.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    border: 0;
+  }
+
   .menu {
-    display: flex;
+    display: none;
     height: 685px;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background: rgba(96, 112, 255, 0.75);
     backdrop-filter: blur(7px);
   }
-  .exit {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    right: 41px;
-    top: 25px;
-  }
+
   .menu-container {
     margin: 0;
     padding: 16px;
@@ -72,7 +78,7 @@
     top: 90px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 28px;
   }
 
@@ -85,6 +91,7 @@
     line-height: 44px;
     color: white;
   }
+
   .intro {
     box-sizing: border-box;
   }
@@ -736,12 +743,10 @@
     color: #344563;
   }
 
-  .containernav > a:nth-child(2) {
+  .toggle {
     display: none;
   }
-  .exit {
-    display: none;
-  }
+
   .menu .menu-container {
     padding: 10px 12px;
     box-sizing: border-box;

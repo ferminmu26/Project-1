@@ -11,8 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6LEV55N5L8"
@@ -26,21 +25,22 @@
 
       gtag("config", "G-6LEV55N5L8");
     </script>
+      <script src="script.js" defer></script>
     <title>Mobile Main</title>
   </head>
 
   <body>
     <main class="wrap">
-      <section class="welcome">
+      <section id="home" class="welcome">
         <div class="welcome-container">
           <header class="header_mobile">
             <div class="containernav">
               <a href=""
                 ><img class="logo" src="icons/Logo.png" alt="logo" /></a>
-              <a href=""><img src="icons/Hamburguer.png" alt="Menu" /></a>
+                <button class="toggle" type="button"><br></button>
+    
               <nav class="menu">
-                <img class="exit" src="icons/exit.png" alt="Close">
-                <ul class="menu-container">
+                <ul id="menu" class="menu-container">
                   <li><a href="#portfolio">Portfolio</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#contact">Contact</a></li>
