@@ -195,6 +195,10 @@
   }
   .popup-img {
     width: 100%;
+    height: 85%;
+    background: url("icons/c3d.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .close-popup {
     border: 0;
