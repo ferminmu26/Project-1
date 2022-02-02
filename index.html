@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6LEV55N5L8"
@@ -25,7 +25,7 @@
 
       gtag("config", "G-6LEV55N5L8");
     </script>
-      <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Mobile Main</title>
   </head>
 
@@ -36,9 +36,10 @@
           <header class="header_mobile">
             <div class="containernav">
               <a href=""
-                ><img class="logo" src="icons/Logo.png" alt="logo" /></a>
-                <button class="toggle" type="button"><br></button>
-    
+                ><img class="logo" src="icons/Logo.png" alt="logo"
+              /></a>
+              <button class="toggle" type="button"><br /></button>
+
               <nav class="menu">
                 <ul id="menu" class="menu-container">
                   <li><a href="#portfolio">Portfolio</a></li>
@@ -79,7 +80,7 @@
         </div>
       </section>
       <section class="works" id="portfolio">
-        <div class="c1">
+        <!-- <div class="c1">
           <a href=""
             ><img src="icons/portfolio.png" alt="" class="portfoliocard" />
             <img src="icons/c1d.png" alt="" class="portfolio-desktop" />
@@ -125,10 +126,76 @@
               <li class="tag">javaScript</li>
             </ul>
             <div>
-              <button type="button" class="click">See Project</button>
+              <button type="button" class="click" data-open="popupcontainer" >See Project</button>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="popupcontainer">
+          <div class="popup">
+            <div class="c1-container">
+              <div class="headContainer">
+                <div>
+                  <h2 class="project">Tonic</h2>
+                  <h2 class="project">Tonic</h2>
+                </div>
+                <button class="close-popup" aria-label="close modal" data-close>
+                  ✕
+                </button>
+              </div>
+              <div class="descrcontainer">
+                <div>
+                  <p class="client">CANOPY</p>
+                  <p class="client">CANOPY</p>
+                </div>
+                <div class="mark">
+                  <img src="icons/Counter.png" alt="" />
+                </div>
+                <div>
+                  <p class="role">Back End Dev</p>
+                  <p class="role">Back End Dev</p>
+                </div>
+                <div class="mark">
+                  <img src="icons/Counter.png" alt="" />
+                </div>
+                <div>
+                  <p class="year">2015</p>
+                  <p class="year">2015</p>
+                </div>
+              </div>
+              <a href=""
+                ><img src="icons/portfolio.png" alt="" class="popup-img" />
+                <img src="icons/c1d.png" alt="" class="portfolio-desktop" />
+              </a>
+              <div>
+                <p class="descrdetail">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+                <p class="descrdetail">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+              </div>
+              <ul class="tagcontainer">
+                <li class="tag">html</li>
+                <li class="tag">css</li>
+                <li class="tag">javaScript</li>
+              </ul>
+              <div class="button-container">
+                <button type="button" class="click" data-open="popup1">
+                  See live <span><img src="icons/seem.png" alt="live" /></span>
+                </button>
+                <button type="button" class="click" data-open="popup1">
+                  See Source<span
+                    ><img src="icons/github.svg" alt="live"
+                  /></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="c2">
           <a href=""
             ><img src="icons/portfolio2.png" alt="" class="portfoliocard" />
