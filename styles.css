@@ -47,9 +47,38 @@
   }
 
   .menu {
-    display: none;
+    height: 685px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
   }
 
+  .menu-container {
+    margin: 0;
+    padding: 16px;
+    position: absolute;
+    left: 12px;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 28px;
+  }
+
+  .menu-container a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+  }
   .intro {
     box-sizing: border-box;
   }
