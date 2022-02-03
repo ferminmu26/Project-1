@@ -47,7 +47,7 @@
   }
 
   .toggle {
-    z-index: 99999;
+    z-index: 99;
     position: absolute;
     right: 40px;
     top: 20px;
@@ -163,8 +163,11 @@
   }
 
   .popupcontainer {
+    visibility: hidden;
+    z-index: 100;
     height: 900px;
-    position: absolute;
+    position: fixed;
+    overflow: scroll;
     left: 0;
     right: 0;
     top: 0;
@@ -195,7 +198,7 @@
   }
   .popup-img {
     width: 100%;
-    height: 85%;
+    height: 60%;
     background: url("icons/c3d.png");
     background-repeat: no-repeat;
     background-size: cover;

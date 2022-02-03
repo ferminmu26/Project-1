@@ -16,8 +16,31 @@ function MobileMenu() {
 toggle.addEventListener('click', MobileMenu);
 link.addEventListener('click', MobileMenu);
 
+//Pop up window
+
+const OpenPopup = document.querySelectorAll('.click');
+const ClosePopup = document.querySelector('.close-popup')
+const PopWindow = document.querySelector('.popupcontainer');
+function popup(){
+  console.log('popup');
+  if (show === false) {
+    PopWindow.style.visibility = 'visible';
+    show = true;
+  }else{
+    PopWindow.style.visibility = 'hidden';
+    show = false;
+
+  }
+}
 
 
+//listening click for all butons
+OpenPopup.forEach(
+  function(cbox) {
+   cbox.addEventListener("click", popup);
+  }
+);
+ClosePopup.addEventListener('click', popup);
 const portfolio = [
   {
   'id': 'c1', 
