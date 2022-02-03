@@ -318,8 +318,12 @@
     background-color: #ebebff;
   }
 
+<<<<<<< HEAD
   .click,
   .click1 {
+=======
+  .click, .click1 {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -336,8 +340,12 @@
     background-color: white;
   }
 
+<<<<<<< HEAD
   .click:active,
   .click1:active {
+=======
+  .click:active, .click1:active {
+
     color: #fff;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -345,8 +353,12 @@
     background-color: #2230d2;
   }
 
+<<<<<<< HEAD
   .click:hover,
   .click1:hover {
+=======
+ .click:active, .click1:active {
+
     color: white;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -1091,8 +1103,12 @@
     background-color: #ebebff;
   }
 
+<<<<<<< HEAD
   .click,
   .click1 {
+=======
+  .click, .click1 {
+
     margin: 24px 0 0 0;
     font-style: normal;
     font-weight: 500;
@@ -1105,8 +1121,12 @@
     background-color: white;
   }
 
+<<<<<<< HEAD
   .click:active,
   .click1:active {
+=======
+  .click:active, .click1:active {
+
     color: #fff;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -1114,8 +1134,12 @@
     background-color: #2230d2;
   }
 
+<<<<<<< HEAD
   .click:hover,
   .click1:hover {
+=======
+  .click:hover, .click1:hover {
+
     color: white;
     border: 1px solid #6070ff;
     box-sizing: border-box;
