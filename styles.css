@@ -332,7 +332,7 @@
     background-color: #ebebff;
   }
 
-  .click {
+  .click, .click1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -349,7 +349,7 @@
     background-color: white;
   }
 
-  .click:active {
+  .click:active, .click1:active {
     color: #fff;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -357,7 +357,7 @@
     background-color: #2230d2;
   }
 
-  .click:hover {
+ .click:active, .click1:active {
     color: white;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -1046,7 +1046,7 @@
     background-color: #ebebff;
   }
 
-  .click {
+  .click, .click1 {
     margin: 24px 0 0 0;
     font-style: normal;
     font-weight: 500;
@@ -1059,7 +1059,7 @@
     background-color: white;
   }
 
-  .click:active {
+  .click:active, .click1:active {
     color: #fff;
     border: 1px solid #6070ff;
     box-sizing: border-box;
@@ -1067,7 +1067,7 @@
     background-color: #2230d2;
   }
 
-  .click:hover {
+  .click:hover, .click1:hover {
     color: white;
     border: 1px solid #6070ff;
     box-sizing: border-box;
