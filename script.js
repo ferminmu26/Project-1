@@ -18,17 +18,7 @@ link.addEventListener('click', MobileMenu);
 
 // Pop up window and portfolio cards
 const container = document.getElementById('portfolio'); // work section
-const OpenPopup = document.querySelectorAll('.click');
-const ClosePopup = document.querySelector('.close-popup');
 const PopWindow = document.querySelector('.popupcontainer');
-// popup variables
-const project = document.querySelector('.popupcontainer .project');
-const client = document.querySelector('.popupcontainer .client');
-const role = document.querySelector('.popupcontainer .role');
-const year = document.querySelector('.popupcontainer .year');
-const description = document.querySelector('.popupcontainer .descrdetail');
-const picture = document.querySelector('.popup-img');
-const check = false;
 
 // Card's data object
 
@@ -122,60 +112,57 @@ const popupObject = [
 
 function SectionBuilder() {
   let cardStrings = '<div class="card-container">'
-    + '<a href="" '
-     + ' ><img src="feature-img" alt="" class="portfoliocard" />'
-     + ' <img src="feature-img" alt="" class="portfolio-desktop" />'
-    + '</a>'
-    + '<div class="c1-container">'
-    + '<div> '
+        + '<a href="" '
+        + ' ><img src="feature-img" alt="" class="portfoliocard" />'
+        + ' <img src="feature-img" alt="" class="portfolio-desktop" />'
+        + '</a>'
+        + '<div class="c1-container">'
+        + '<div> '
         + '<h2 class="project">Tonic</h2>'
-      + '</div> '
-      + '<div class="descrcontainer"> '
+        + '</div> '
+        + '<div class="descrcontainer"> '
         + '<div> '
-          + '<p class="client">CANOPY</p> '
-       + ' </div> '
+        + '<p class="client">CANOPY</p> '
+        + ' </div> '
         + '<div class="mark"> '
-          + '<img src="icons/Counter.png" alt="" /> '
+        + '<img src="icons/Counter.png" alt="" /> '
         + '</div> '
         + '<div> '
-          + '<p class="role">Back End Dev</p> '
+        + '<p class="role">Back End Dev</p> '
         + '</div> '
         + '<div class="mark"> '
-          + '<img src="icons/Counter.png" alt="" /> '
+        + '<img src="icons/Counter.png" alt="" /> '
         + '</div> '
         + '<div> '
-          + '<p class="year">2015</p> '
+        + '<p class="year">2015</p> '
         + '</div> '
-  + '</div> '
-      + '<div> '
+        + '</div> '
+        + '<div> '
         + '<p class="descrdetail"> '
-          + 'textereas '
+        + 'textereas '
         + '</p> '
-      + '</div> '
-      + '<ul class="tagcontainer">'
+        + '</div> '
+        + '<ul class="tagcontainer">'
         + '<li class="tag">tech</li> '
         + '<li class="tag">tech</li> '
         + '<li class="tag">tech</li> '
         + '<li class="tag">tech</li> '
         + '<li class="tag">tech</li> '
         + '<li class="tag">tech</li> '
-      + '</ul> '
-      + '<div> '
+        + '</ul> '
+        + '<div> '
         + '<button type="button" id="button-index" class="click" data-open="popupcontainer"> '
-          + 'See Project '
+        + 'See Project '
         + '</button> '
-      + '</div> '
-    + '</div> '
-  + '</div>  ';
+        + '</div> '
+        + '</div> '
+        + '</div>  ';
   const cardWork = cardStrings;
-
   for (let i = 0; i < portfolio.length; i += 1) {
     cardStrings = cardWork;
-
     cardStrings = cardStrings.replace('card-container', portfolio[i].id);
     cardStrings = cardStrings.replaceAll('feature-img', portfolio[i].image);
     cardStrings = cardStrings.replaceAll('Tonic', portfolio[i].name);
-    cardStrings = cardStrings.replaceAll('CANOPY', portfolio[i].client);
     cardStrings = cardStrings.replaceAll('CANOPY', portfolio[i].client);
     cardStrings = cardStrings.replaceAll('Back End Dev', portfolio[i].role);
     cardStrings = cardStrings.replaceAll('2015', portfolio[i].year);
@@ -186,53 +173,77 @@ function SectionBuilder() {
     }
     cardStrings = cardStrings.replaceAll('<li class="tag">tech</li>', '');
     container.innerHTML += cardStrings;
-
-    if (i === portfolio.length) {
-      return check;
-    }
   }
 }
-window.addEventListener('load', SectionBuilder);
-
-function popup() {
-  if (show === false) {
+function PopupBuilder(btn, index) {
+  btn.addEventListener('click', () => {
     PopWindow.style.visibility = 'visible';
-    show = true;
-  } else {
+    let popupContent = '<div class="popup">'
+              + '<div class="headContainer">'
+              + '<div>'
+              + '<h2 class="project">Tonic</h2>'
+              + '</div><button class="close-popup">✕</button></div>'
+              + '<div class="descrcontainer">'
+              + '<div><p class="client">CANOPY</p></div>'
+              + '<div class="mark"><img src="icons/Counter.png" alt="" /></div>'
+              + '<div><p class="role">Back End Dev</p></div>'
+              + '<div class="mark"><img src="icons/Counter.png" alt="" /></div>'
+              + '<div><p class="year">2015</p></div>'
+              + '</div>'
+              + '<div class="popup-img"><img src="feature-img" alt=""></div>'
+              + '<div class="popup-container">'
+              + '<div class="description-popup">'
+              + '<p class="descrdetail">textereas</p></div>'
+              + '<div class="footer-container">'
+              + '<ul class="tagcontainer">'
+              + '<li class="tag">tech</li> '
+              + '<li class="tag">tech</li> '
+              + '<li class="tag">tech</li> '
+              + '<li class="tag">tech</li> '
+              + '<li class="tag">tech</li> '
+              + '<li class="tag">tech</li> '
+              + '</ul>'
+              + '<div class="button-container">'
+              + '<button type="button" class="click1">'
+              + 'See live<span><img src="icons/seem.png" alt="live" /></span>'
+              + '</button>'
+              + '<button type="button" class="click1">'
+              + 'See Source<span><img src="icons/github.svg" alt="live"/></span>'
+              + '</button>'
+              + '</div>'
+              + '</div>'
+              + '</div>'
+              + '</div>';
+
+    popupContent = popupContent.replaceAll('feature-img', popupObject[index].image);
+    popupContent = popupContent.replaceAll('Tonic', popupObject[index].name);
+    popupContent = popupContent.replaceAll('CANOPY', popupObject[index].client);
+    popupContent = popupContent.replaceAll('Back End Dev', popupObject[index].role);
+    popupContent = popupContent.replaceAll('2015', popupObject[index].year);
+    popupContent = popupContent.replaceAll('textereas', popupObject[index].description);
+
+    for (let x = 0; x < popupObject[index].technologies.length; x += 1) {
+      popupContent = popupContent.replace('tech', portfolio[index].technologies[x]);
+    }
+    popupContent = popupContent.replaceAll('<li class="tag">tech</li>', '');
+    PopWindow.innerHTML += popupContent;
+  });
+}
+function closePopup(btn) {
+  btn.addEventListener('click', () => {
     PopWindow.style.visibility = 'hidden';
-    show = false;
-  }
+  });
+}
+document.addEventListener('DOMContentLoaded', SectionBuilder);
+
+function close() {
+  const ClosePopup = PopWindow.querySelectorAll('.close-popup');
+  ClosePopup.forEach(closePopup);
 }
 
-// listening click for all butons
-OpenPopup.forEach(
-  (cbox) => {
-    cbox.addEventListener('click', popup);
-  },
-);
-ClosePopup.addEventListener('click', popup);
-
-// identifying cards
-/* const work = window.getElementById('.click'); */
-
-const cards = [].slice.call(container.querySelectorAll('button'), 0);
-
-// getting index from cards buttons and creating popup function
-container.addEventListener('click', (e) => {
-  const index = cards.indexOf(e.target);
-  project.innerHTML = popupObject[index].name;
-  client.innerHTML = popupObject[index].client;
-  role.innerHTML = popupObject[index].role;
-  year.innerHTML = popupObject[index].year;
-  description.innerHTML = popupObject[index].description;
-  picture.style.background = popupObject[index].image;
-});
-/* function cardPopup(){
-    project.innerHTML = popupObject[index].name;
-    client.innerHTML = popupObject[index].client;
-    role.innerHTML = popupObject[index].role;
-    year.innerHTML = popupObject[index].year;
-    description.innerHTML = popupObject[index].description;
-    picture.style.background = popupObject[index].image;
-
-} */
+function execute() {
+  const btns = container.querySelectorAll('button');
+  btns.forEach(PopupBuilder);
+}
+container.addEventListener('click', execute);
+PopWindow.addEventListener('click', close);
