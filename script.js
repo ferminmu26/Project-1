@@ -121,53 +121,55 @@ const popupObject = [
 ];
 
 function SectionBuilder() {
-  let cardStrings = '<div class="card-container"> \
-    <a href="" \
-      ><img src="feature-img" alt="" class="portfoliocard" /> \
-      <img src="feature-img" alt="" class="portfolio-desktop" /> \
-    </a> \
-    <div class="c1-container"> \
-    <div> \
-        <h2 class="project">Tonic</h2> \
-      </div> \
-      <div class="descrcontainer"> \
-        <div> \
-          <p class="client">CANOPY</p> \
-        </div> \
-        <div class="mark"> \
-          <img src="icons/Counter.png" alt="" /> \
-        </div> \
-        <div> \
-          <p class="role">Back End Dev</p> \
-        </div> \
-        <div class="mark"> \
-          <img src="icons/Counter.png" alt="" /> \
-        </div> \
-        <div> \
-          <p class="year">2015</p> \
-        </div> \
-      </div> \
-      <div> \
-        <p class="descrdetail"> \
-          textereas \
-        </p> \
-      </div> \
-      <ul class="tagcontainer"> \
-        <li class="tag">tech</li> \
-        <li class="tag">tech</li> \
-        <li class="tag">tech</li> \
-        <li class="tag">tech</li> \
-      </ul> \
-      <div> \
-        <button type="button" id="button-index" class="click" data-open="popupcontainer"> \
-          See Project \
-        </button> \
-      </div> \
-    </div> \
-  </div>  ';
+  let cardStrings = '<div class="card-container">'
+    + '<a href="" '
+     + ' ><img src="feature-img" alt="" class="portfoliocard" />'
+     + ' <img src="feature-img" alt="" class="portfolio-desktop" />'
+    + '</a>'
+    + '<div class="c1-container">'
+    + '<div> '
+        + '<h2 class="project">Tonic</h2>'
+      + '</div> '
+      + '<div class="descrcontainer"> '
+        + '<div> '
+          + '<p class="client">CANOPY</p> '
+       + ' </div> '
+        + '<div class="mark"> '
+          + '<img src="icons/Counter.png" alt="" /> '
+        + '</div> '
+        + '<div> '
+          + '<p class="role">Back End Dev</p> '
+        + '</div> '
+        + '<div class="mark"> '
+          + '<img src="icons/Counter.png" alt="" /> '
+        + '</div> '
+        + '<div> '
+          + '<p class="year">2015</p> '
+        + '</div> '
+  + '</div> '
+      + '<div> '
+        + '<p class="descrdetail"> '
+          + 'textereas '
+        + '</p> '
+      + '</div> '
+      + '<ul class="tagcontainer">'
+        + '<li class="tag">tech</li> '
+        + '<li class="tag">tech</li> '
+        + '<li class="tag">tech</li> '
+        + '<li class="tag">tech</li> '
+        + '<li class="tag">tech</li> '
+        + '<li class="tag">tech</li> '
+      + '</ul> '
+      + '<div> '
+        + '<button type="button" id="button-index" class="click" data-open="popupcontainer"> '
+          + 'See Project '
+        + '</button> '
+      + '</div> '
+    + '</div> '
+  + '</div>  ';
   const cardWork = cardStrings;
 
-  for (let i = 0; i < portfolio.length; i++) {
+  for (let i = 0; i < portfolio.length; i += 1) {
     cardStrings = cardWork;
 
     cardStrings = cardStrings.replace('card-container', portfolio[i].id);
@@ -179,10 +181,10 @@ function SectionBuilder() {
     cardStrings = cardStrings.replaceAll('2015', portfolio[i].year);
     cardStrings = cardStrings.replaceAll('textereas', portfolio[i].description);
 
-    for (let x = 0; x < portfolio[i].technologies.length; x++) {
+    for (let x = 0; x < portfolio[i].technologies.length; x += 1) {
       cardStrings = cardStrings.replace('tech', portfolio[i].technologies[x]);
     }
-    cardStrings = cardStrings.replace('<li class="tag">tech</li>', '');
+    cardStrings = cardStrings.replaceAll('<li class="tag">tech</li>', '');
     container.innerHTML += cardStrings;
 
     if (i === portfolio.length) {
@@ -213,9 +215,8 @@ ClosePopup.addEventListener('click', popup);
 // identifying cards
 /* const work = window.getElementById('.click'); */
 
+const cards = [].slice.call(container.querySelectorAll('button'), 0);
 
-const cards = [].slice.call(container.querySelectorAll("button"), 0);
-console.log(cards);
 // getting index from cards buttons and creating popup function
 container.addEventListener('click', (e) => {
   const index = cards.indexOf(e.target);
