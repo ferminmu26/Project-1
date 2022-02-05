@@ -60,7 +60,7 @@
 
   .menu {
     display: none;
-    height: 685px;
+    height: 100%;
     position: absolute;
     left: 0;
     right: 0;
