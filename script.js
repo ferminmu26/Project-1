@@ -252,4 +252,50 @@ function execute() {
 container.addEventListener('click', execute);
 PopWindow.addEventListener('click', close);
 
+// Form Validation
+const form = document.getElementById('form');
+const error = document.querySelector('.error');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
+form.addEventListener('submit', (e) => {
+  const message = [];
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    message.push('E-mail has to be in lowercase letters !!!');
+  }
+  if (message.length > 0) {
+    error.innerText = message.join(', ');
+  }
+});
+
+let formLocal = { name: '', email: '', message: '' };
+if (localStorage.formLocal) {
+  formLocal = JSON.parse(localStorage.formLocal);
+  name.value = formLocal.name;
+  email.value = formLocal.email;
+  message.value = formLocal.message;
+}
+form.addEventListener('input', () => {
+  localStorage.formLocal = JSON.stringify(formLocal);
+  formLocal.name = name.value;
+  formLocal.email = email.value;
+  formLocal.message = message.value;
+});
+
+// Form Validation
+const formContainer = document.getElementsByClassName('form-container');
+const check = document.querySelector('.notification');
+const mail = document.getElementsByClassName('email');
+
+formContainer.addEventListener('submit', (e) => {
+  const message = [];
+  if (mail.value !== mail.value.toLowerCase()) {
+    e.preventDefault();
+    message.push('E-mail has to be in lowercase letters !!!');
+  }
+  if (message.length > 0) {
+    check.innerText = message.join(', ');
+  }
+});
