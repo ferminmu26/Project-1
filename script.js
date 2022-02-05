@@ -73,7 +73,7 @@ const popupObject = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    image: 'url("icons/c1d.png")',
+    image: 'icons/c1d.png',
     technologies: ['html', 'css', 'javaScript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
@@ -83,7 +83,7 @@ const popupObject = [
     client: 'FACEBOOK',
     role: 'Full Stack Dev',
     year: '2015',
-    image: 'url("icons/c2d.png")',
+    image: 'icons/c2d.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
@@ -93,7 +93,7 @@ const popupObject = [
     client: 'FACEBOOK',
     role: 'Full Stack Dev',
     year: '2015',
-    image: 'url("icons/c3d.png")',
+    image: 'icons/c3d.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
@@ -103,7 +103,7 @@ const popupObject = [
     client: 'Uber',
     role: 'Lead Developer',
     year: '2018',
-    image: 'url("icons/c4d.png")',
+    image: 'icons/c4d.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
@@ -190,7 +190,7 @@ function PopupBuilder(btn, index) {
               + '<div class="mark"><img src="icons/Counter.png" alt="" /></div>'
               + '<div><p class="year">2015</p></div>'
               + '</div>'
-              + '<div class="popup-img"><img src="feature-img" alt=""></div>'
+              + '<div class="pop-img"><img class="popup-img" src="feature-img" alt=""></div>'
               + '<div class="popup-container">'
               + '<div class="description-popup">'
               + '<p class="descrdetail">textereas</p></div>'
@@ -226,7 +226,7 @@ function PopupBuilder(btn, index) {
       popupContent = popupContent.replace('tech', portfolio[index].technologies[x]);
     }
     popupContent = popupContent.replaceAll('<li class="tag">tech</li>', '');
-    PopWindow.innerHTML += popupContent;
+    PopWindow.innerHTML = popupContent;
   });
 }
 function closePopup(btn) {
@@ -241,9 +241,13 @@ function close() {
   ClosePopup.forEach(closePopup);
 }
 
+/* for excecute an acton inside an dynamic content must be
+created another fucntion that read the classes or what i need call */
+
 function execute() {
   const btns = container.querySelectorAll('button');
   btns.forEach(PopupBuilder);
 }
+/* event triggers */
 container.addEventListener('click', execute);
 PopWindow.addEventListener('click', close);
